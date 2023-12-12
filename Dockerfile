@@ -13,5 +13,4 @@ RUN unzip kindle.zip
 RUN cp -rvf markups-kindle/* .
 RUN rm -rf __MACOSX markups-kindle kindle.zip
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
-ENTRYPOINT sudo yum update
 EXPOSE 80
